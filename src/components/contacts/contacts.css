@@ -1,0 +1,130 @@
+.title{
+    margin-bottom:50px;
+}
+
+.title h5{
+    text-align: center;
+}
+
+.title h2{
+    text-align: center;
+    color:var( --color-primary);
+}
+
+.container.contact__container{
+    width:58%;
+    display:grid;
+    grid-template-columns: 30% 52% 6%;
+    gap:12%;
+}
+
+.contact__options{
+    display:flex;
+    flex-direction: column;
+    gap:1.2rem;
+}
+
+.contact__option{
+    background: var(--color-bg-variant);
+    width:320px;
+    padding:1.2rem;
+    border-radius:1.2rem;
+    text-align: center;
+    border:1px solid transparent;
+    transition:var(--transition);
+}
+
+.contact__option:hover{
+    background: transparent;
+    border-color:var(--color-orange);
+}
+
+.contact__option-icon{
+    font-size:1.5rem;
+    margin-bottom:0.5rem;
+}
+
+.contact__option a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size:0.8rem;
+}
+
+.contact__option h5{
+    color:var(--color-light);
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:1.2rem;
+}
+
+input, textarea{
+    width:100%;
+    padding:1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border:2px solid var(--color-orange);
+    resize:none;
+    color:var(--color-white)
+}
+
+.scroll__up{  
+    position: absolute;
+    right:13rem;
+    margin-top:500px;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 1.2rem;
+    color:var(--color-orange);
+
+}
+
+
+/*============= Media queries (MEDIUM DEVICES) ============== */
+@media screen and (max-width: 1024px) {
+    .container.contact__container{
+        grid-template-columns: 1fr;
+        gap:2rem;
+    }
+
+    .scroll__up{  
+        right:2rem;
+        margin-top:-8px;
+        transform: rotate(90deg);
+        font-weight: 300;
+        font-size: 1.2rem;
+        color:var(--color-orange);
+    
+    }
+
+  }
+
+  @media screen and (max-width: 1900px) {
+    .title{
+        margin-bottom:50px;
+    }
+    .contact__options{
+        display:flex;
+        flex-direction: column;
+        gap:1.2rem;
+    }
+  }
+  
+  /*============= Media queries (SMALL DEVICES) ============== */
+  @media screen and (max-width: 600px) {
+    .container.contact__container{
+        width:var(--container)
+    }
+
+    .scroll__up{  
+        right:0.1rem;
+        margin-top:-8px;
+        transform: rotate(90deg);
+        font-weight: 300;
+        font-size: 1.2rem;
+        color:var(--color-orange);
+    
+    }
+  }
